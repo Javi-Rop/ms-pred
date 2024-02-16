@@ -189,6 +189,11 @@ def magma_augmentation(
     s_m, s_i = spectra[:, 0], spectra[:, 1]
 
     # Correct for s_m by subtracting it
+    print(common.ion2mass)
+    common.ion2mass["[M-H]-"] = -1.007276452
+    common.ion2mass["[M+Cl]-"] = + 34.969402
+
+
     adjusted_m = s_m - common.ion2mass[spectra_adduct]
 
     # Step 3: Make all assignments

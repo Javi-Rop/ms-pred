@@ -92,6 +92,7 @@ element_to_position_mass = dict(zip(VALID_ELEMENTS, ELEMENT_VECTORS_MASS))
 # Map ion to adduct mass, don't use electron
 ion2mass = {
     "[M+H]+": ELEMENT_TO_MASS["H"] - ELECTRON_MASS,
+    "[M-H]-": -ELEMENT_TO_MASS["H"] - ELECTRON_MASS,
     "[M+Na]+": ELEMENT_TO_MASS["Na"] - ELECTRON_MASS,
     "[M+K]+": ELEMENT_TO_MASS["K"] - ELECTRON_MASS,
     "[M-H2O+H]+": -ELEMENT_TO_MASS["O"] - ELEMENT_TO_MASS["H"] - ELECTRON_MASS,
