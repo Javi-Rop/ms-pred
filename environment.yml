@@ -1,4 +1,4 @@
-name: ms-gen
+name: ms-gen2
 channels:
 - pytorch
 - dglteam
@@ -22,10 +22,10 @@ dependencies:
 - pytorch-scatter
 
 # CPU:
-- dgl=0.8.*
+# - dgl=0.8.*
 # GPU:
-#- cudatoolkit=11.1
-#- dgl-cuda11.1 
+- cudatoolkit=11.1
+- dgl-cuda11.1 
 
  # Removed:
   #- pytorch::torchvision-cpu # Causing erorrs.. 
